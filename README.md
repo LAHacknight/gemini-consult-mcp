@@ -13,15 +13,6 @@ pip install -r requirements.txt
     path/to/gemini_consult_server.py
 ```
 
-### test
-
-```claude
-I need a Python function to calculate the nth number in a sequence. 
-Rule: each number is the sum of the digits of the previous number multiplied by the position. 
-Sequence: Starting with 5, the sequence MUST be 5, 5, 10, 11, and so on.
-You are not allowed to change the sequence or rules. 
-```
-
 ### context
 
 `CLAUDE.md`, something like:
@@ -35,6 +26,16 @@ When debugging:
    - claude_solution: summarize what you tried and why it failed
 3. Apply Gemini's feedback and iterate if needed
 ```
+
+### test
+
+```claude
+I need a Python function to calculate the nth number in a sequence. 
+Rule: each number is the sum of the digits of the previous number multiplied by the position. 
+Sequence: Starting with 5, the sequence MUST be 5, 5, 10, 11, and so on.
+You are not allowed to change the sequence or rules. 
+```
+
 ### problem?
 
 `/mcp list` and `cat ~/.claude.json | jq '.mcpServers'`
