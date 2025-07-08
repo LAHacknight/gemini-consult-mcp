@@ -5,7 +5,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 # install for user
- claude mcp add gemini-mcp-consult \
+ claude mcp add gemini-consult-mcp \
     -s user \
     -e GEMINI_API_KEY=your-key-here-or-pass-from-env \
     -e GEMINI_MODEL=gemini-2.5-pro \
@@ -30,7 +30,7 @@ You are not allowed to change the sequence or rules.
 
 When debugging:
 1. Attempt to fix the problem yourself
-2. ONLY if stuck after 2 attempts, use `collaborative_problem_solving`:
+2. ONLY if stuck after 2 attempts, use gemini-consult-mcp `collaborative_problem_solving`:
    - problem_statement: describe the bug/error clearly
    - claude_solution: summarize what you tried and why it failed
 3. Apply Gemini's feedback and iterate if needed
